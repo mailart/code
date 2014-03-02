@@ -1,0 +1,118 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:background="@drawable/listbk"
+    android:orientation="horizontal" >
+
+    
+    <TextView
+        android:id="@+id/addremove"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textColor="#555555"
+        android:focusable="false"
+        android:onClick="removenum"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="17dp" 
+        android:textSize = "35sp"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    
+    
+    
+    <RelativeLayout
+        android:id="@+id/listitemlayout"
+        android:layout_width="0dp"
+        android:layout_weight="10"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/listbk"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp" >
+    
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="FoodName"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000" />
+   
+    
+   <TextView
+        android:id="@+id/measure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Title"
+        android:layout_toRightOf="@+id/attachment"
+        android:layout_alignLeft="@+id/Title"
+        android:layout_marginTop="1dp"
+        android:text="Measure"
+        android:textColor="#555555"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+   <TextView
+       android:id="@+id/weight"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignLeft="@+id/Title"
+       android:layout_below="@+id/measure"
+       android:text="Weight"
+       android:textAppearance="?android:attr/textAppearanceSmall"
+       android:textColor="#555555" />
+        
+    <RelativeLayout
+        android:id="@+id/listitemlayffout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/listbk"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="5dp" 
+        android:layout_marginTop="5dp" >
+        
+        
+	<TextView
+        android:id="@+id/count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        android:textColor="#555555"
+        android:layout_marginTop="6dp"
+        
+        android:textSize = "38sp"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+	
+     <TextView
+        android:id="@+id/tcal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cal"
+        android:textColor="#555555"
+        android:layout_marginTop="45dp"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+     
+     </RelativeLayout>
+
+    </RelativeLayout>
+	
+	<TextView
+        android:id="@+id/addnum"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:textColor="#555555"
+        android:layout_marginLeft="10dp"
+        android:focusable="false"
+        android:onClick="addnum"
+        android:layout_marginTop="17dp" 
+        android:textSize = "35sp"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</LinearLayout>

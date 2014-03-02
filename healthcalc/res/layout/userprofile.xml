@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/ic_launcher" 
+    tools:context=".MainActivity" xmlns:android1="http://schemas.android.com/apk/res/android">
+
+    
+        
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="76dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/titlebkblue"
+        android:layout_centerHorizontal="true" >
+        
+        	
+        <Button
+            android:id="@+id/userprofile"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/lw" 
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp" />
+        
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:id="@+id/framework"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="0dp"
+        >
+
+        <ListView
+            android1:id="@+id/useritem"
+            android1:layout_width="fill_parent"
+            android1:layout_height="0dp"
+            android1:layout_marginTop="0dp"
+            android1:layout_weight="6.48"
+            android1:background="@drawable/white" >
+        </ListView>
+        
+        <Button
+            android:id="@+id/OK"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android1:layout_weight="1"
+            android:background="@drawable/titlebkblue"
+            android1:text="OK"
+            android:onClick="onClick_Save"
+            android1:textColor="@drawable/white" />
+        
+    </LinearLayout>
+    
+</RelativeLayout>

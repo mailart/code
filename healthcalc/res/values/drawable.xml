@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>   
+<resources>   
+    <drawable name="white">#FFFFFF</drawable>   
+    <drawable name="yellow">#fbfac1</drawable>     
+    <drawable name="red">#FF0000</drawable>   
+    
+    <drawable name="titlebk">#F9BA06</drawable>   
+    <drawable name="dashboard">#F7C341</drawable>   
+    <drawable name="listbk">#F6D300</drawable>   
+    <drawable name="addbk">#2BAFAC</drawable>   
+    
+    <drawable name="titlebkgreen">#0A7A2C</drawable>  
+    
+    <drawable name="titlebkblue">#098484</drawable>  
+</resources>  

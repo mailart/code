@@ -1,0 +1,198 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/ic_launcher" 
+    tools:context=".MainActivity" xmlns:android1="http://schemas.android.com/apk/res/android">
+
+    
+        
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="76dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/titlebk"
+        android:layout_centerHorizontal="true" >
+        
+        	
+        <Button
+            android:id="@+id/userprofile"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/lw" 
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp" />
+        
+        <Button
+            android:id="@+id/userprofile"
+            android:layout_width="28dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/people1" 
+            android:layout_marginRight="10dp"
+            android:onClick="onUser"
+            android:layout_marginTop="21dp" />
+
+        <Button
+            android:id="@+id/timepick"
+            android:layout_width="28dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/userprofile"
+            android:background="@drawable/cale1" 
+            android:layout_marginRight="13dp"
+            android:onClick="onDate"
+            android:layout_toLeftOf="@+id/userprofile" />
+        
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:id="@+id/framework"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="0dp"
+        >
+        
+    <LinearLayout
+        android:id="@+id/dailystatus"
+        android:orientation="horizontal" 
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:layout_below="@+id/framework"
+        android:background="@drawable/dashboard"
+        android:layout_marginTop="0dp"
+        >
+		
+        <Button
+            android:id="@+id/left"
+            android:layout_height="30dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/arrowleft" 
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="140dp" />
+        
+        <LinearLayout
+	        android:id="@+id/num"
+	        android:layout_width="0dp"
+	        android:layout_weight="10"
+	        android:orientation="vertical"
+	        android:gravity="center"
+	        android:layout_height="fill_parent"
+	        android:background="@drawable/dashboard"
+	        android:layout_marginTop="0dp"
+	        android:layout_marginLeft="0dp"
+	        >
+	        
+            <TextView
+	            android:id="@+id/date"
+	            android:layout_width="wrap_content"
+	            android:layout_height="0dp"
+	            android:layout_weight="2"
+	            android:layout_marginTop="10dp"
+	            android:textSize = "30sp"
+	            android:alpha="1"
+	            android:textColor = "@drawable/white"
+	            android:layout_centerHorizontal="true"
+	            android:text="Mar,1 2014" />
+        
+	        <TextView
+	            android:id="@+id/title1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="0dp"
+	            android:layout_weight="1"
+	            android:layout_marginTop="35dp"
+	            android:textSize = "40sp"
+	            android:layout_below="@+id/date"
+	            android:alpha="1"
+	            android:textColor = "@drawable/white"
+	            android:layout_centerHorizontal="true"
+	            android:text="Total Calorie" />
+	        
+	        
+	        <TextView
+	            android:id="@+id/leftcal"
+	            android:layout_width="wrap_content"
+	            android:layout_height="0dp"
+	            android:layout_weight="1"
+	            android:layout_marginTop="10dp"
+	            android:textSize = "35sp"
+	            android:alpha="1"
+	            android:textColor = "@drawable/white"
+	            android:layout_below="@+id/title1"
+	            android:layout_centerHorizontal="true"
+	            android:text="123" />
+	       
+	        
+	        <TextView
+	            android:id="@+id/title2"
+	            android:layout_width="wrap_content"
+	            android:layout_height="0dp"
+	            android:layout_weight="2"
+	            android:layout_centerHorizontal="true"
+	            android:layout_below="@+id/left"
+	            android:alpha="1"
+	            android:textColor = "@drawable/white"
+	            android:textSize = "35sp"
+	            android:layout_marginTop="10dp"
+	            android:text="Plan: 2000 " />
+	        
+        
+        </LinearLayout>
+        
+        <Button
+            android:id="@+id/right"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="30dp"
+            android:background="@drawable/arrowright" 
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="140dp" />
+        
+    </LinearLayout>
+    
+    <ListView
+        android:id="@+id/foodlist"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/dailystatus"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/listbk" >
+        </ListView>
+
+    <RelativeLayout
+        android:id="@+id/addbut"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/foodlist"
+        android:layout_centerHorizontal="true"
+        android:alpha="1"
+        android:onClick="myClickAdd"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/addbk" >
+        
+    <Button
+        android:id="@+id/addfood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="onAdd"
+        android:background="@drawable/addfood" />
+    </RelativeLayout>
+
+    </LinearLayout>
+    
+</RelativeLayout>

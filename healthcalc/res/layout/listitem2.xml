@@ -1,0 +1,72 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/listitemlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="0dp"
+        android:background="#ffffff"
+        android:layout_marginTop="0dp" >
+    
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="FoodName"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000" />
+   
+    
+   <TextView
+        android:id="@+id/measure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Title"
+        android:layout_toRightOf="@+id/attachment"
+        android:layout_alignLeft="@+id/Title"
+        android:layout_marginTop="1dp"
+        android:text=""
+        android:textColor="#555555"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+   <TextView
+       android:id="@+id/weight"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignLeft="@+id/Title"
+       android:text=""
+       android:layout_below="@+id/measure"
+       android:textAppearance="?android:attr/textAppearanceSmall"
+       android:textColor="#555555" />
+        
+    <RelativeLayout
+        android:id="@+id/listitemlayffout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="5dp" 
+        android:background="#ffffff"
+        android:layout_marginTop="5dp" >
+        
+     <TextView
+        android:id="@+id/cal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#555555"
+        android:layout_marginTop="23dp"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+     </RelativeLayout>
+     
+    </RelativeLayout>
+
+</LinearLayout>
